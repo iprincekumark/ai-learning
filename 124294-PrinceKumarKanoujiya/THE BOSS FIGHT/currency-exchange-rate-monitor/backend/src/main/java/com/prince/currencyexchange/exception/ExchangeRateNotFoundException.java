@@ -1,0 +1,1 @@
+package com.prince.currencyexchange.exception; public class ExchangeRateNotFoundException extends RuntimeException { public ExchangeRateNotFoundException(String m){super(m);} }

@@ -1,0 +1,1 @@
+package com.prince.currencyexchange.dto; public record CurrencyResponse(String countryName,String currencyCode,String currencyName){}
