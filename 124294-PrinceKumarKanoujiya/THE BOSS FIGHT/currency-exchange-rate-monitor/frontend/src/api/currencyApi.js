@@ -1,0 +1,1 @@
+const BASE="http://localhost:8080";export const fetchCurrencies=async()=>{const r=await fetch(`${BASE}/currency`);if(!r.ok)throw new Error((await r.json()).message||"Failed");return r.json();};export const fetchRate=async(f,t)=>{const r=await fetch(`${BASE}/exchange-rate/${f}/${t}`);const d=await r.json();if(!r.ok)throw new Error(d.message||"Failed");return d;};

@@ -1,0 +1,3 @@
+package com.prince.currencyexchange.entity;
+import jakarta.persistence.*;
+@Entity @Table(name="currency") public class Currency { @Id private Long id; @Column(name="currency_code") private String currencyCode; @Column(name="currency_name") private String currencyName; @Column(name="country_name") private String countryName; public Long getId(){return id;} public String getCurrencyCode(){return currencyCode;} public String getCurrencyName(){return currencyName;} public String getCountryName(){return countryName;} }

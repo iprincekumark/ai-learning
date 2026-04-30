@@ -1,0 +1,1 @@
+package com.prince.currencyexchange.dto; import java.math.BigDecimal; public record ExchangeRateResponse(String fromCurrencyCode,String toCurrencyCode,BigDecimal exchangeRate){}
